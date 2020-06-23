@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Gear</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    </head>
+
+    <body>
+
+      <div class="header">
+        <h1>DH_BOIS: MOUNTAIN BIKING
+        </h1>
+        <h6 style="color:rgb(219, 106, 140)"><i>"A bad day on a mountain bike always beats a good day in the office."</i></h6>
+      </div>
+
+        <div id="navbar">
+          <a href="index.html">Home</a>
+          <a href="Fundamentals.html">101</a>
+          <a class="active" href="Gear.html">Gear</a>
+          <a href="Clothing.html">Clothing</a>
+          <a href="Maintenance.html">Maintenance</a>
+          <a href="Skill.html">Skills</a>
+        </div>
+
+<div class="content">
+  
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12 col-md-9">
+              <div class="alert alert-dark" role="alert">
+                <h2><center> Mountain Biking Gears: GEAR FOR BEGINNERS</center></h2>
+              </div>
+              <div class="content_1">
+                <img src="images/gears_1.png" id="image_conTent">
+                
+                <ol><h3>
+                <li>Helmet</li>
+                <img src="images/gears_helmet_1.png" id="image_gears">
+                <li>Hydration system</li>
+                <img src="images/gears_hydration.png" id="image_gears">
+                <li>Handheld Pump and Tube</li>
+                <img src="images/gears_pump.png" id="image_gears">
+                <li>Protective Glasses</li>
+                <img src="images/gears_glasses.png" id="image_gears">
+                <li>Multi-Tool</li>
+                <img src="images/gears_tools.png" id="image_gears">
+                <li>Riding Gloves</li>
+                <img src="images/gears_gloves.png" id="image_gears">
+                <li>Riding Shorts</li>
+                <img src="images/gears_shorts.png" id="image_gears">
+                <li>Riding Buddy</li>
+                <img src="images/buddies4.jpg" id="image_gears">
+                </h3></ol>
+              </div>
+            </div>
+
+            <div class="col-sm-12 col-md-3">
+              <div class="card" style="width: 18rem; background-color: black; color: white;">
+                <div class="card-header">
+                  <h4>RELATED TOPIC's</h4>
+                </div>
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item"><a href="#howto">HOW TO</a></li>
+                  <li class="list-group-item"><a href="#howto">HOW TO</a></li>
+                  <li class="list-group-item"><a href="#howto">HOW TO</a></li>
+                  <li class="list-group-item"><a href="#howto">HOW TO</a></li>
+                  <li class="list-group-item"><a href="#howto">HOW TO</a></li>
+                </ul>
+
+                  <img src="images/side_slideshow5.jpg" width="100%" height="200px">
+                  <img src="images/side_slideshow6.jpg" width="100%" height="200px">
+                  <img src="images/side_slideshow3.jpg" width="100%" height="200px">
+
+              </div>
+            </div>
+        </div>
+        
+    </div>
+</div>
+
+<footer class="footer">
+  @DHBOIS 2020 
+</footer>
+
+<!--navbar fixed position-->
+        <script>
+            window.onscroll = function() {myFunction()};
+  
+  // Get the navbar
+  var navbar = document.getElementById("navbar");
+  
+  // Get the offset position of the navbar
+  var sticky = navbar.offsetTop;
+  
+  // Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+  function myFunction() {
+    if (window.pageYOffset >= sticky) {
+      navbar.classList.add("sticky")
+    } else {
+      navbar.classList.remove("sticky");
+    }
+  }
+            </script>
+
+    </body>
+</html>

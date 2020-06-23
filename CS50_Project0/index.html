@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Home</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    </head>
+
+    <body>
+
+      <div class="header">
+        <h1>DH_BOIS: MOUNTAIN BIKING
+        </h1>
+        <h6 style="color:rgb(219, 106, 140)"><i>"A bad day on a mountain bike always beats a good day in the office."</i></h6>
+      </div>
+
+        <div id="navbar">
+          <a class="active" href="index.html">Home</a>
+          <a href="Fundamentals.html">101</a>
+          <a href="Gear.html">Gear</a>
+          <a href="Clothing.html">Clothing</a>
+          <a href="Maintenance.html">Maintenance</a>
+          <a href="Skill.html">Skills</a>
+        </div>
+
+<div class="content">
+
+<div class="slideshow-container">
+  <div class="mySlides fade">
+  <div class="numbertext">1 / 5</div>
+  <img src="images/index1.jpg" class="img-fluid">
+  <div class="text">Riding Feels Good!</div>
+  </div>
+
+  <div class="mySlides fade">
+  <div class="numbertext">2 / 5</div>
+  <img src="images/index2.jpg" class="img-fluid">
+  <div class="text">Enjoy Nature</div>
+  </div>
+
+  <div class="mySlides fade">
+  <div class="numbertext">3 / 5</div>
+  <img src="images/index3.jpg" class="img-fluid">
+  <div class="text"> Improved Heart Health</div>
+  </div>
+  <div class="mySlides fade">
+    <div class="numbertext">4 / 5</div>
+    <img src="images/index4.jpg"class="img-fluid">
+    <div class="text"> Adrenaline</div>
+    </div>
+    <div class="mySlides fade">
+      <div class="numbertext">5 / 5</div>
+      <img src="images/index5.png" class="img-fluid">
+      <div class="text"> Improved Heart Health</div>
+      </div>
+
+</div><br>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span>
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+</div>
+
+
+</div>
+
+<footer class="footer">
+  @DHBOIS 2020 
+</footer>
+
+
+
+
+<!--navbar fixed position-->
+        <script>
+window.onscroll = function() {myFunction()};
+  // Get the navbar
+  var navbar = document.getElementById("navbar");
+  // Get the offset position of the navbar
+  var sticky = navbar.offsetTop;
+  
+  // Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+  function myFunction() {
+    if (window.pageYOffset >= sticky) {
+      navbar.classList.add("sticky")
+    } else {
+      navbar.classList.remove("sticky");
+    }
+  }
+            </script>
+
+<!--picture slideshow-->
+            <script>
+              var slideIndex = 0;
+              showSlides();
+              
+              function showSlides() {
+                var i;
+                var slides = document.getElementsByClassName("mySlides");
+                var dots = document.getElementsByClassName("dot");
+                for (i = 0; i < slides.length; i++) {
+                  slides[i].style.display = "none";  
+                }
+                slideIndex++;
+                if (slideIndex > slides.length) {slideIndex = 1}    
+                for (i = 0; i < dots.length; i++) {
+                  dots[i].className = dots[i].className.replace(" active", "");
+                }
+                slides[slideIndex-1].style.display = "block";  
+                dots[slideIndex-1].className += " active";
+                setTimeout(showSlides, 2000); // Change image every 2 seconds
+              }
+              </script>
+    </body>
+</html>
